@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import useTime from './hooks/useTime';
-import styles from './App.module.css';
+import styles from './App.module.scss';
 
 function App() {
   const [time] = useTime();
