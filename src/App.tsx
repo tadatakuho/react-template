@@ -1,16 +1,16 @@
 import logo from './logo.svg';
 import useTime from './hooks/useTime';
-import './App.css';
+import styles from './App.module.css';
 
 function App() {
   const [time] = useTime();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className={styles.App}>
+      <header className={styles['App-header']}>
+        <img src={logo} className={styles['App-logo']} alt="logo" />
         <p>{time?.toLocaleString()}</p>
         <a
-          className="App-link"
+          className={styles['App-link']}
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
