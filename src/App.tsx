@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import useTime from './hooks/useTime';
+import useTime from 'src/hooks/useTime';
 import styles from './App.module.scss';
 
 function App() {
