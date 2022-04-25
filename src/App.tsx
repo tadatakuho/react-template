@@ -1,6 +1,6 @@
-import logo from './logo.svg';
-import useTime from 'src/hooks/useTime';
 import styles from './App.module.scss';
+import useTime from './hooks/useTime';
+import logo from './logo.svg';
 
 function App() {
   const [time] = useTime();
@@ -8,7 +8,7 @@ function App() {
     <div className={styles.App}>
       <header className={styles['App-header']}>
         <img src={logo} className={styles['App-logo']} alt="logo" />
-        <p>{time?.toLocaleString()}</p>
+        {/* <p>{time?.toLocaleString()}</p> */}
         <a
           className={styles['App-link']}
           href="https://reactjs.org"
